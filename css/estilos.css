@@ -174,11 +174,14 @@ header #page2{
     background-size: cover;
 
 }
+
+
 header .menu {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
 }
+
 
 header .logo-y-menu{
     display: flex;
@@ -485,5 +488,16 @@ footer{
 
     .fechas div{
         margin-bottom: 10px;
+    }
+    #page2 .contenedor .titular h1 {
+        flex-direction: column;
+        line-height: 60px;
+        color: #000000;
+    }
+    header #page2 .contenedor .menu .logo-y-menu img{
+        filter: brightness(5.1);
+    }
+    main .contenedor-main{
+        padding: 5%;
     }
 }
