@@ -402,6 +402,7 @@ footer{
     background-color: #747474;
 }
 
+
 @media (max-width: 800px){
     header .menu {
         flex-direction: column;
@@ -425,7 +426,4 @@ footer{
     nav ul li {
         margin-bottom: 20px;
     }
-
-
-
 }
