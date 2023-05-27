@@ -44,7 +44,7 @@ li{
 .contenedor {
     width: 90%;
     max-width: 1280px;
-    margin: auto;
+    margin: 0 auto;
 }
 .contenedorF{
     background: url(../images/encabezado.jpg);
@@ -58,13 +58,16 @@ li{
 main .conConta{
     margin-top: 10%;
     margin-bottom: 20%;
+    display: flex;
+
 }
 
 /*FORM*/
 .conConta {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    
 }
 
 .contact {
@@ -72,25 +75,34 @@ main .conConta{
     margin-right: 20px;
     padding-left: 20px;
 }
+.contact h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.contact p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 
 .elform {
     flex: 1;
     padding-right: 20px;
 }
-
-label {
+.elform label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
+
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 input[type="submit"] {
@@ -98,7 +110,7 @@ input[type="submit"] {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
@@ -179,13 +191,15 @@ header #page2{
 header .menu {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    align-items: center;
+    padding: 20px 0;
 }
 
 
 header .logo-y-menu{
     display: flex;
     align-items: center;
+    max-width: 100px;
     
 }
 header .navbar{
@@ -198,12 +212,14 @@ header .navbar{
 
 nav ul{
     display: flex;
+    list-style: none;
 }
 nav ul li {
     margin: 0 20px;
 }
 nav ul li a{
     color: #fff;
+    font-weight: bold;
 }
 a{
     position: relative;
@@ -392,13 +408,21 @@ footer{
     text-align: center;
     padding: 60px 0;
     font-family: 'Ubuntu';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .contenedor .redes i {
     color: rgb(0, 0, 0);
     padding: 15px;
     border-radius: 50%;
-    margin: 0 10px;
+    margin-right:  10px;
+    font-size: 24px;
 }
     
 #tour .boton a:hover{
@@ -412,9 +436,13 @@ footer{
     }
     header .logo-y-menu {
         justify-content: space-between;
+        margin-bottom: 20px;
     }
     nav ul {
         flex-direction: column;
+        align-items: center;
+        padding: 0;
+        
     }
     nav {
         background-color: #000000;
@@ -422,13 +450,18 @@ footer{
         position: relative;
         top: 0;
         display: none;
+        
     }
     nav ul li a {
         color: #f8f8f8;
+        text-align: center;
+        padding: 10px;
+        
         
     }
     nav ul li {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        
     }
     .boton{
         margin-top: 200px;
@@ -498,6 +531,7 @@ footer{
         filter: brightness(5.1);
     }
     main .contenedor-main{
-        padding: 5%;
+        padding: 10%;
     }
+
 }
