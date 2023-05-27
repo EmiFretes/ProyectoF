@@ -426,4 +426,55 @@ footer{
     nav ul li {
         margin-bottom: 20px;
     }
+    .boton {
+        margin-top: 200px;
+        display: none;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    header .titular{
+        margin-top: 19vh;
+    }
+    h2 {
+        font-size: 27px !important;
+    }
+    #discografia .contenedor {
+        flex-direction: column;
+    }
+    #discografia .texto {
+        width: 100%;
+    }
+    #discografia .foto {
+        width: 82%;
+        margin-top: 20px;
+    }
+    .contenedor-textos{
+        flex-direction: column;
+    }
+    header .boton a, .botones a, #discografia a {
+        background-color: #666;
+        color:#000000;
+        padding: 14px 19px;
+        line-height: 50px;
+        font-size: 13px;
+
+    }
+    #tour .contenedor{
+        flex-direction: column;
+    }
+    #tour .imagen{
+        width: 65%;
+        position: relative;
+        top: -27px;
+    }
+    #tour .texto {
+        width: 100%;
+    }
+    .fechas {
+        flex-direction: column;
+    }
+    .fechas div{
+        margin-bottom: 10px;
+    }
 }
