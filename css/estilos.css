@@ -6,9 +6,10 @@
     list-style: none;
 }
 
-.conainerimage{
+.containerimage{
     min-height: 100vh;
     overflow-x: hidden;
+    
 }
 
 .galeria , .videoss{
@@ -161,11 +162,27 @@ button {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    display: inline-block; 
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 button:hover {
-    background-color: #660202;
+    background: linear-gradient(90deg, #660202, #FF0000);
+    background-size: 200% auto;
+    animation: gradient 3s linear infinite;
 }
 
 button:focus {
@@ -177,6 +194,7 @@ button:active {
     background-color: #666;
 }
 
+
 header #page2{
     background: url(../images/enctour.jpg);
     height: 55vh;
@@ -187,6 +205,15 @@ header #page2{
 
 }
 
+header #page3{
+    background: url(../images/disco.jpg);
+    height: 55vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 header .menu {
     display: flex;
@@ -208,6 +235,10 @@ header .navbar{
     display: flex;
     padding: 20px;
     font-size: 18px;
+}
+.my-main{
+    margin: 0;
+    background-color: #f2f2f2;
 }
 
 nav ul{
@@ -240,8 +271,8 @@ nav ul li a::before {
 }
 
 nav ul li a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 
@@ -286,6 +317,60 @@ h1{
 
     
 }
+/* Estilos personalizados para el header */
+.my-header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    /* Agrega más estilos personalizados según tus necesidades */
+  }
+  
+  .my-header .contenedor {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .my-header .logo-y-menu img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    /* Agrega más estilos personalizados según tus necesidades */
+  }
+  
+  .my-header .my-navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  .my-header .my-navbar{
+    margin-right: 20px;
+    justify-content: end;
+    display: flex;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .my-header .my-navbar ul li {
+    margin: 0 20px;
+  }
+  
+  .my-header .my-navbar ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Krona One', sans-serif;
+    /* Agrega más estilos personalizados según tus necesidades */
+  }
+
+
+
+
+
+
+
+
+
+
 #discografia {
     background: rgba(0, 0, 0, 0.767);
     color: #fff;
@@ -412,10 +497,8 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
-footer h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
+
+
 
 .contenedor .redes i {
     color: rgb(0, 0, 0);
@@ -428,6 +511,8 @@ footer h3 {
 #tour .boton a:hover{
     background-color: #747474;
 }
+
+
 
 
 @media (max-width: 800px) {
@@ -452,6 +537,8 @@ footer h3 {
         display: none;
         
     }
+
+
     nav ul li a {
         color: #f8f8f8;
         text-align: center;
