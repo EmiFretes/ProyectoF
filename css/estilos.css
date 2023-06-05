@@ -197,7 +197,7 @@ button:active {
 }
 
 
-header #page2{
+header .page2{
     background: url(../images/enctour.jpg);
     height: 55vh;
     background-attachment: fixed;
@@ -207,7 +207,7 @@ header #page2{
 
 }
 
-header #page3{
+header .page3{
     background: url(../images/disco.jpg);
     height: 55vh;
     background-attachment: fixed;
@@ -279,7 +279,7 @@ nav ul li a:hover::before {
 
 
 
-header .boton-compra a, .botones a, #discografia a{
+header .boton-compra a, .botones a, .discografia a{
     background: black;
     color: #fff;
     padding: 20px 40px;
@@ -287,21 +287,21 @@ header .boton-compra a, .botones a, #discografia a{
 }
 header .boton-compra a:hover,
 .botones a:hover,
-#discografia a:hover {
+.discografia a:hover {
     background-color: #660202;
 }
 
 
 header .boton-compra a:focus,
 .botones a:focus,
-#discografia a:focus {
+.discografia a:focus {
     outline: none;
     box-shadow: 0 0 0 2px #fff, 0 0 0 4px black;
 }
 
 header .boton-compra a:active,
 .botones a:active,
-#discografia a:active {
+.discografia a:active {
     background-color: #666;
 }
 
@@ -365,7 +365,7 @@ h1{
 }
 
 
-#discografia {
+.discografia {
     background: rgba(0, 0, 0, 0.767);
     color: #fff;
     padding: 60px 0;
@@ -394,31 +394,31 @@ h2 {
 }
 
 
-#discografia .contenedor{
+.discografia .contenedor{
     display: flex;
     align-items: center;
 }
-#discografia span{
-    color: rgba(255, 0, 0, 0.836);
+.discografia span{
+color: rgba(255, 0, 0, 0.836);
     text-decoration: underline;
 }
-#discografia h2{
+.discografia h2{
     font-size: 45px;
     margin-bottom: 10px;
 }
-#discografia p{
+.discografia p{
     font-size: 14px;
     line-height: 27px ;
     margin-bottom: 40px;
 }
 
-#discografia img{
+.discografia img{
     width: 100%;
 }
-#discografia .texto {
+.discografia .texto {
     width: 50%;
 }
-#discografia .foto{
+.discografia .foto{
     width: 40%;
 }
 .contenedor-textos{
@@ -432,13 +432,13 @@ h2 {
     bottom: 72px;
 }
 
-#about h4{
+.about h4{
     color: black;
     border: 1px solid rgba(255, 0, 0, 0.836);
     text-align: center;
     margin-bottom: 2%;
 }
-#about p, #tour p, footer p{
+.about p, .tour p, footer p{
     font-family: 'Jost';
     margin-bottom: 40px;
     font-weight: bolder;
@@ -446,30 +446,30 @@ h2 {
 .negro{
     background: #868686;
 }
-#about{
+.about{
     padding: 100px 0;
 }
-#tour {
+.tour {
     background: rgb(203,203,203);
     background: linear-gradient(0deg, rgba(203,203,203,1) 0%, rgba(112,112,112,1) 100%);
     padding: 60px 0;
 }
-#tour .contenedor{
+.tour .contenedor{
     display: flex;
     justify-content: space-around
 }
-#tour img{
+.tour img{
     width: 100%;
 }
-#tour .texto{
+.tour .texto{
     width: 50%;
 }
-#tour .imagen{
+.tour .imagen{
     width: 40%;
     position: relative;
     top: -110px;
 }
-#tour h4{
+.tour h4{
     color: black;
     text-align: center;
 }
@@ -517,7 +517,7 @@ footer{
     font-size: 24px;
 }
     
-#tour .boton a:hover{
+.tour .boton a:hover{
     background-color: #747474;
 }
 
@@ -541,12 +541,12 @@ footer{
         align-items: center;
         padding: 0;
     }
-    .my-header .my-navbar{
+    .my-header .my-navbar {
         background-color: #000000;
         width: 100%;
         position: relative;
         top: 0;
-        display: none;
+   
     }
     
     .my-header .my-navbar ul li {
@@ -587,8 +587,6 @@ footer{
         flex-direction: column;
     }
 
-
-
     nav ul li a {
         color: #f8f8f8;
         text-align: center;
@@ -600,6 +598,7 @@ footer{
         margin-bottom: 10px;
         
     }
+    
     .boton{
         margin-top: 200px;
         display: none;
@@ -610,11 +609,13 @@ footer{
     }
     header .boton-compra a{
         background: black;
-        color: #fff;
+        color: #000000;
         top: 10px;
     }
     h1 {
         font-size: 32px;
+        position: relative;
+        top: 5px;
     }
     header .titular{
         margin-top: 19vh;
@@ -622,20 +623,21 @@ footer{
     h2 {
         font-size: 27px ;
     }
-    #discografia .contenedor {
+
+    .discografia .contenedor {
         flex-direction: column;
     }
-    #discografia .texto {
+    .discografia .texto {
         width: 100%;
     }
-    #discografia .foto {
+    .discografia .foto {
         width: 82%;
         margin-top: 20px;
     }
     .contenedor-textos{
         flex-direction: column;
     }
-    header .boton a, .botones a, #discografia a {
+    header .boton a, .botones a, .discografia a {
         background-color: #666;
         color:#000000;
         padding: 14px 19px;
@@ -644,15 +646,15 @@ footer{
 
     }
     
-    #tour .contenedor{
+    .tour .contenedor{
         flex-direction: column;
     }
-    #tour .imagen{
+    .tour .imagen{
         width: 65%;
         position: relative;
         top: -27px;
     }
-    #tour .texto {
+    .tour .texto {
         width: 100%;
     }
     .fechas {
@@ -663,21 +665,19 @@ footer{
     .fechas div{
         margin-bottom: 10px;
     }
-    #page2 .contenedor .titular h1 {
+    .page2 .contenedor .titular h1 {
         flex-direction: column;
         line-height: 60px;
         color: #000000;
     }
-    header #page2 .contenedor .menu .logo-y-menu img{
+    header .page2 .contenedor .menu .logo-y-menu img{
         filter: brightness(5.1);
     }
     main .contenedor-main{
         padding: 10%;
     }
-    .conConta {
+    main .conConta {
         flex-direction: column;
         align-items: center;
-
-        }
-
+}
 }
