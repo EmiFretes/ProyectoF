@@ -380,8 +380,18 @@ h4{
     margin-bottom: 2%;
 }
 
+h3 {
+    margin: 0;
+    padding: 10px;
+    margin-left: -5px;
 
+}
 
+h2 {
+    font-size: 27px ;
+    margin: 0;
+    padding-bottom: 15px;
+}
 
 
 #discografia .contenedor{
@@ -417,6 +427,11 @@ h4{
 .texto-derecha{
     margin-left: 1%;
 }
+.texto-izquierda{
+    position: relative;
+    bottom: 72px;
+}
+
 #about h4{
     color: black;
     border: 1px solid rgba(255, 0, 0, 0.836);
@@ -429,7 +444,7 @@ h4{
     font-weight: bolder;
 }
 .negro{
-    background: #868686 !important;
+    background: #868686;
 }
 #about{
     padding: 100px 0;
@@ -567,6 +582,11 @@ footer{
         display: none;
         
     }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
 
 
     nav ul li a {
@@ -600,7 +620,7 @@ footer{
         margin-top: 19vh;
     }
     h2 {
-        font-size: 27px !important;
+        font-size: 27px ;
     }
     #discografia .contenedor {
         flex-direction: column;
