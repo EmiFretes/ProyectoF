@@ -5,7 +5,13 @@
     text-decoration: none;
     list-style: none;
 }
+::-webkit-scrollbar {
+    width: 8px; 
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+}
 .containerimage{
     min-height: 100vh;
     overflow-x: hidden;
@@ -36,6 +42,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Krona One', sans-serif;
+    
 }
 a{
     text-decoration: none;
@@ -424,11 +431,17 @@ color: rgba(255, 0, 0, 0.836);
     display: flex;
 }
 .texto-derecha{
-    margin-left: 1%;
+    float: right;
+    width: 50%;
+    top: 35px;
+    position: relative;
+    left: 20px;
 }
 .texto-izquierda{
     position: relative;
-    bottom: 72px;
+    float: left;
+    width: 50%;
+    top: -50px;
 }
 
 .about h4{
@@ -533,6 +546,7 @@ footer{
     header .logo-y-menu {
         justify-content: space-between;
         margin-bottom: 20px;
+        flex-direction: column;
     }
     nav ul {
         flex-direction: column;
