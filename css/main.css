@@ -85,7 +85,7 @@ li {
 main .conConta {
   margin-top: 10%;
   margin-bottom: 20%;
-  display: flex; }
+  display: block; }
 
 .conConta {
   display: flex;
@@ -93,7 +93,6 @@ main .conConta {
   align-items: flex-start; }
 
 .contact {
-  flex: 1;
   margin-right: 20px;
   padding-left: 20px; }
   .contact h1 {
@@ -104,8 +103,8 @@ main .conConta {
     line-height: 1.5; }
 
 .elform {
-  flex: 1;
-  padding-right: 20px; }
+	width: 96%;
+  margin: 20px; }
   .elform label {
     display: block;
     margin-bottom: 10px; }
