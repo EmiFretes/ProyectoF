@@ -592,7 +592,12 @@ footer {
 				a {
 					color: $color_7;
 					text-align: center;
-					padding: 10px;
+					padding: 4px;
+					background-color: black;
+					font-size: 16px;
+					font-weight: bold;
+					text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+					border: 3px solid #838383;
 				}
 				margin-bottom: 10px;
 			}
