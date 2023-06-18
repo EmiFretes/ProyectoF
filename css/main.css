@@ -100,7 +100,8 @@ main .conConta {
     margin-bottom: 20px; }
   .contact p {
     font-size: 16px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    text-align: justify; }
 
 .elform {
 	width: 96%;
@@ -353,7 +354,7 @@ h1 {
       .my-header .my-navbar ul li {
         margin: 0 20px; }
         .my-header .my-navbar ul li a {
-          color: #ffffff;
+          
           font-weight: bold;
           text-decoration: none;
           font-family: "Krona One", sans-serif; }
@@ -403,7 +404,8 @@ h2 {
   .about p {
     font-family: "Jost";
     margin-bottom: 40px;
-    font-weight: bolder; }
+    font-weight: bolder;
+    text-align: justify; }
 
 .tour {
   background: #cbcbcb;
@@ -412,7 +414,8 @@ h2 {
   .tour p {
     font-family: "Jost";
     margin-bottom: 40px;
-    font-weight: bolder; }
+    font-weight: bolder;
+    text-align: justify; }
   .tour .contenedor {
     display: flex;
     justify-content: space-around; }
@@ -526,7 +529,7 @@ footer {
   h1 {
     font-size: 32px;
     position: relative;
-    top: 5px; }
+    bottom: 50px; }
   h2 {
     font-size: 27px; }
   .discografia .contenedor {

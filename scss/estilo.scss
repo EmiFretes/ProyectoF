@@ -112,6 +112,7 @@ main {
 	p {
 		font-size: 16px;
 		line-height: 1.5;
+		text-align: justify;
 	}
 }
 .elform {
@@ -402,7 +403,7 @@ h1 {
 			li {
 				margin: 0 20px;
 				a {
-					color: $color_3;
+					
 					font-weight: bold;
 					text-decoration: none;
 					font-family: $font-family_1;
@@ -462,6 +463,7 @@ h2 {
 		font-family: $font-family_2;
 		margin-bottom: 40px;
 		font-weight: bolder;
+		text-align: justify;
 	}
 	padding: 100px 0;
 }
@@ -470,6 +472,7 @@ h2 {
 		font-family: $font-family_2;
 		margin-bottom: 40px;
 		font-weight: bolder;
+		text-align: justify;
 	}
 	background: rgb(203,203,203);
 	background: linear-gradient(0deg, rgba(203,203,203,1) 0%, rgba(112,112,112,1) 100%);
